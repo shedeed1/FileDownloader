@@ -6,7 +6,7 @@ import com.rx2androidnetworking.Rx2AndroidNetworking
 
 class ApiServiceImpl : ApiService {
     override fun getFiles(): Single<List<File>> {
-        return Rx2AndroidNetworking.get("https://5e510330f2c0d300147c034c.mockapi.io/users")
+        return Rx2AndroidNetworking.get("https://nagwa.free.beeceptor.com/movies/")
             .build()
             .getObjectListSingle(File::class.java)
     }

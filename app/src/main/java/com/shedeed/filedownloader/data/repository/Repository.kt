@@ -5,7 +5,7 @@ import com.shedeed.filedownloader.data.model.File
 import io.reactivex.Single
 
 class Repository(private val apiHelper: ApiHelper) {
-    fun getUsers(): Single<List<File>> {
+    fun getFiles(): Single<List<File>> {
         return apiHelper.getFiles()
     }
 }
